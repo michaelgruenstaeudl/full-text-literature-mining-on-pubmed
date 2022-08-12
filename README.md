@@ -5,7 +5,7 @@ A Python package for literature mining on PubMed
 
 ## EXAMPLE USAGE
 
-#### Cyanobacteria - conservative search [^1]
+#### Cyanobacteria - conservative search[^1]
 ```
 python3 01_litMiningPubmed_conductMining.py \
 -q "(Cyanobacteria[tiab] OR Cyanobacteria[mh]) \
@@ -14,8 +14,21 @@ AND (*synthesis[tiab] OR *synthesis[mh]) \
 AND (gene[tiab] OR gene[mh]) \
 AND 2000:2022[dp] \
 AND free full text[sb]" \
--m info@michael-gruenstaeudl.at
+-m your_email@address_here.at
 ```
+
+#### Cyanobacteria - liberal search -- NOT RECOMMENDED
+```
+python3 01_litMiningPubmed_conductMining.py \
+-q "Cyanobacteria[all]\
+AND cyanotox*[all] \
+AND *synthesis[all] \
+AND gene[all] \
+AND 2000:2022[dp] \
+AND free full text[sb]" \
+-m your_email@address_here.at
+```
+
 
 [^1]: Notes regarding query string: 
 - "cyanotox*" is necessary b/c possible terms include "cyanotoxin(s)", "cyanotoxicity", etc.
