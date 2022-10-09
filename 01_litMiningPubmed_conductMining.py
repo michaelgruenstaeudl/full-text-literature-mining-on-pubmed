@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-__version__ = 'mi.gruenstaeudl@gmail.com|2022-08-04T22:09:36 CEST'
+__version__ = 'm.gruenstaeudl@fu-berlin.de|2022-08-04T22:09:36 CEST'
 
 #-----------------------------------------------------------------#
 ## IMPORTS
