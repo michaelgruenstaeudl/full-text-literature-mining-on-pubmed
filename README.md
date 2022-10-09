@@ -51,3 +51,14 @@ AND free full text[sb]" \
 -m your_email@address_here.at
 ```
 
+#### Trichoderma - liberal search -- NOT RECOMMENDED
+```
+python3 01_litMiningPubmed_conductMining.py \
+-q "Trichoderma[all]\
+AND mycotox*[all] \
+AND *synthesis[all] \
+AND gene[all] \
+AND 2000:2022[dp] \
+AND free full text[sb]" \
+-m your_email@address_here.at
+```
